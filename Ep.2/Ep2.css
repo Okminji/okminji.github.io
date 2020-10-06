@@ -1,0 +1,35 @@
+
+figcaption{
+    text-align: center;
+}
+a{
+    color: tomato;
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+    line-height: 180%;
+    font-size: 103%;
+    font-family: Arial, Helvetica, sans-serif;
+    color:  #262626;
+}
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        
+    }
+.sub{
+    color: darkgreen;
+    font-weight: bold;
+
+}
+body 
+{
+    width: 660px;
+    margin: 200px;
+    margin-top: 0px;
+}
+#i{
+    color: darkred;
+}
+figure{ margin: 0; padding: 0 }
