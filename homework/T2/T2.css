@@ -1,0 +1,42 @@
+.img{
+    height: 120px;
+    width: 100px;
+    border: 1px solid blue;
+    float: left;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+.justified{
+    text-align: justify;
+}
+.body{
+    max-width: 700px;
+    padding: 40px;
+    border: 1px solid darkgray;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+}
+#italic{
+    font-style: italic;
+}
+#bold{
+    font-weight: bold;
+}
+img{
+    object-fit: cover;
+    height: 120px;
+    max-width: 100%;
+}
+img#b{
+    object-fit: cover;
+    width: 100px;
+    max-height: 100px;
+}
+body{
+    background-color: rgb(183, 202, 202);
+}
