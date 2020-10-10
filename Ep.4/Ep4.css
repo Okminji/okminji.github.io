@@ -1,0 +1,43 @@
+*{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.item{
+    flex: auto;
+    height: fit-content;
+    border: 1px solid red;
+}
+.item:not(:last-child){
+    margin-right: 10px;
+}
+.row{
+    display: flex;
+}
+img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+p{
+    text-align: center;
+}
+.head
+{
+    text-align: center;
+}
+.followtop
+{
+    bottom: calc(100% - 50px);
+    position: fixed;
+    text-align: center;
+    background-color: royalblue;
+    width: 100%;
+}
+.followbottom
+{
+    top: calc(100% - 50px);
+    position: fixed;
+    text-align: center;
+    background-color: royalblue;
+    width: 100%;
+}
