@@ -17,9 +17,12 @@ img{
     margin-right: auto;
     margin-left: auto;
     display: block;
+    object-fit: cover;
 }
 p{
     text-align: center;
+    width: 100%;
+    background-color: thistle;
 }
 .head
 {
@@ -33,11 +36,24 @@ p{
     background-color: royalblue;
     width: 100%;
 }
-.followbottom
-{
+.followbottom{
     top: calc(100% - 50px);
     position: fixed;
     text-align: center;
-    background-color: royalblue;
+    background-color: red;
     width: 100%;
+}
+nav{
+     top: calc(0%);
+    position: fixed;
+    background-color: saddlebrown;
+    width: 100%;
+}
+li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    color: snow;
+    text-decoration: none;
 }

@@ -1,0 +1,72 @@
+.card{
+  width: 190px;
+  display: inline-block;
+  position: relative;
+  margin: 3px;
+  border-radius: 6px;
+}
+img{
+    object-fit: cover;
+    height: auto;
+    border-radius: 6px;
+    max-width: 100%;
+    min-height: 106px;
+    box-sizing: border-box;
+}
+.name{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transition: 0.2s;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+    color: whitesmoke;
+    
+}
+.card:hover .name{
+    top: 39%;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.menu {
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu_item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu_link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-decoration: none;
+    color: #ffffff;
+}
+.z-logo {
+    background-image: url(https://zjs.zadn.vn/zmp3-desktop/releases/v0.2.0/images/logo-mp-3.svg);
+    display: block;
+    width: 100px;
+    height: 32px;
+    background-size: cover;
+    font-size: 0;
+    margin-top: 19px;
+}
+body{
+    background-color: #0D021A;
+}
+h3{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    text-align: left;
+}

@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    width: 358px;
+    margin: 100px auto;
+    box-shadow: 0 0 5px rgb(209, 202, 202);
+    padding: 15px;
+    border-radius: 10px;
+}
+
