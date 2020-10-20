@@ -47,6 +47,7 @@ main {
 }
 ul{
     margin-left: 40px;
+
 }
 .des{
     padding-right: 5px;
@@ -57,6 +58,7 @@ ul{
 }
 a{
      text-decoration: none;
+     color: blue;
 }
 .bannerimg{
     width: 100%;
@@ -74,6 +76,8 @@ p{
 .menu{
     width: 100%;
     background-color: #4F3AB7;
+    display: flex;
+    justify-content: space-between;
 }
 .menulist{
     display: flex;
