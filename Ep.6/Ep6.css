@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 500px; */
+  /* align-content: flex-end; */
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item{
+    flex-basis: 300px;
+}
+img{
+    max-width: 100%;
+}
+/* .item:not(:nth-child(5n)){
+    margin-right: 2.5%;
+} */

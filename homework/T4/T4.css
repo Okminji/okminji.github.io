@@ -70,3 +70,6 @@ h3{
     font-size: 26px;
     text-align: left;
 }
+img:hover{
+    transform: scale(1,2);
+}

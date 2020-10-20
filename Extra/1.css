@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+h2 {
+  text-align: center;
+}
+main {
+  display: flex;
+  margin-top: 30px;
+  justify-content:space-between;
+}
+.main {
+  flex-basis: 62%;
+  margin-left: 40px;
+  line-height: 32px;
+      border-radius: 8px;
+    box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+    padding: 20px;
+    padding-top: 8px;
+}
+.sub{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.ads{
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: 0 4px 9px 0 rgba(67, 65, 79, 0.1);
+}   
+.adsimg{
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+}
+.highlight {
+  flex-basis: 23%;
+  background-color: white;
+}
+ul{
+    margin-left: 40px;
+}
+.des{
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 100%; 
+    text-align: end;
+    font-size: 18px;
+}
+a{
+     text-decoration: none;
+}
+.bannerimg{
+    width: 100%;
+    height: 120px;
+}
+body{
+    font-family: 'Muli', sans-serif;
+}
+p{
+    font-size: 17px;
+}
+.theme{
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    background-color: #4F3AB7;
+}
+.menulist{
+    display: flex;
+    list-style-type: none;
+    margin-left: 8rem;
+    color: ivory;
+}
+.mi{
+   margin-right: 5rem;
+   font-weight: 600;
+   font-size: 2rem;
+}
