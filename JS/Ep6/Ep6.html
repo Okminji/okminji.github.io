@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep6</title>
+</head>
+<body>
+    <script>
+        function V(r) {
+            let V = 0;
+            V= 4/3*Math.PI*Math.pow(r,3);
+            return V
+        }
+        function sum(a,b) {
+            if (Number.isInteger(a)==false || Number.isInteger(b)==false ) {
+                return
+            }
+            let sum=0;
+            let i=0;
+            let h=0;
+            if (a<b) {
+                i=a;
+                h=b} else if (a>b){
+                h=a;
+                i=b} else {return sum}
+            
+            for (; i < h-1; i++) {
+                sum = sum+i+1;
+                
+            }
+            return sum
+        }
+        function prime(a){
+            let x=true
+            if (a<=1) {
+                x = false
+                return x             
+            } else if (a==2) {
+                return x
+            } else{
+                for(let i=2; i<=a/2; i++){
+                    if (a%i==0) {
+                        x=false
+                        return x
+                    } 
+                }
+            }
+            return x
+        }
+        function sumprime(a){
+            let sum=0;
+            if (a<=1){
+                sum= 0
+                return sum
+            } else if (a==2) {
+                sum=2 
+                return sum
+            } else{
+                for( let i=2; i<=a;i++){
+                    if (prime(i)==true){
+                        sum=sum+i
+                    }
+                }
+            }
+            return sum
+        }
+
+
+        function sumdiv(a){
+            let sum=0
+            for(let i=2; i<=a/2; i++){
+                if (a%i==0){
+                    sum= sum+i;
+                }
+            }
+            sum=sum+1+a
+            return sum
+        }
+    </script>
+</body>
+</html>

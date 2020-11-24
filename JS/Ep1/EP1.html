@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log('Hello world');
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+    <script>
+        let age=35
+        age=40
+        console.log(age);
+        console.log(typeof age);
+        age= 20
+        console.log(typeof age);
+        let age1= 1
+        console.log(age == age1);
+        const _self=12
+        let sn="NGUYEN"
+        let ln="THU HANG"
+        let fn= sn + " " + ln
+        console.log(fn);
+        console.log('abc');
+        let fn1 = `${sn} ${ln}`
+        console.log(fn1);
+        let a = 10
+        let b = 4
+        console.log(a+b);
+        console.log(a-b);
+        console.log(a*b);
+        console.log(a/b);
+        console.log(a**b);
+        console.log();
+        console.log(Math.pi);
+        console.log(Math.sqrt(a));
+        console.log(Math.abs(a));
+        console.log()
+        //""+1+0
+        function SayHello(name,day,month,year) {
+            console.log(`Welcome back ${name}, today is ${day}/${month}/${year}`);
+            if (day == 24 && month == 12) {
+                console.log(`Merrychristmas ${year}`)
+            }
+    }
+        SayHello(`You`,24,12,2540)
+        function Xinchao() {
+            console.log(`Xin chao cac ban`);
+            
+        }
+        function helloname(X) {
+            console.log(`Xin chao`, X );
+            
+        }
+        helloname(`as`);
+        function helloname1(X){
+            console.log(`Xin chao "${X}"`);
+        }
+        helloname1(`H`);
+        function plus(a,b) {
+            return(a+b);
+            
+        }
+        function sqr(a) {
+            return(a**2);
+        }
+        sqr(2);
+        function cen(a) {
+            return(Math.floor(((a-1)/100)+1));            
+        }
+        cen(2001);
+        console.log(cen(2000));
+    </script>
+</body>
+</html>

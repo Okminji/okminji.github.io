@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log(true || true);
+        console.log(true || false);
+        console.log(false || true);
+        console.log(false || false);
+        
+        console.log(true && true);
+        console.log(true && false);
+        console.log(false && true);
+        console.log(false && false);
+
+        console.log(Boolean(2));
+        console.log(Boolean(0));
+        console.log();
+        let number = 2020
+        if (number%2==0 && number%5==0) {
+            console.log(`yayx10`);
+        } else if (number%5==0) {
+            console.log(`oospx5`);
+        } else {
+            console.log(`oosp`);
+        }
+        function mark() {
+            let mark = Math.floor(Math.random()*100);
+            console.log(mark);
+            if (mark > 85) {
+                console.log(`A`);
+            } else if (mark > 70){
+                console.log("B");
+            } else if (mark > 40){
+                console.log("C");
+            } else {console.log("D");}
+        }
+        mark();
+        function compare(x,y) {
+            if (x>y) {
+                console.log(`x: ${x} > y: ${y}`);
+            } else if (x<y) {
+                console.log(`y: ${y} > x: ${x}`);
+            } else if (x=y) { console.log(`x: ${x} = y: ${y}`);
+            } else {console.log(`SYNTAX ERROR`);}
+        }
+        let day = 1
+        switch (day) {
+            case 0 : {console.log(`Hom nay la thu 2`); break}
+            case 1 : {console.log(`Hom nay la thu 3`); break}
+            case 2 : {console.log(`Hom nay la thu 4`); break}
+            case 3 : {console.log(`Hom nay la thu 5`); break}
+            case 4 : {console.log(`Hom nay la thu 6`); break}
+            case 5 : {console.log(`Hom nay la thu 7`); break}
+            case 6 : {console.log(`Hom nay la CN`);}
+            default: {console.log("OOSP"); break}
+            
+
+        }
+        let sum=0
+        for (let A = 0; A <= 20; A++) {
+            if (A%3==0 || A%5==0) {
+                sum= sum + A
+            }
+            
+        }
+        console.log(sum);
+        sum=0
+        for (let A = 0; A < 20; A++) {
+           if (sum>120) {
+               break
+           }
+           sum= sum+A;   
+        }
+        console.log(sum);
+        sum=0
+        for (let A = 0; A <= 20; A++) {
+           if (A%3==0) {
+               continue
+           }
+           sum= sum+A;   
+        }
+        console.log(sum);
+        let arr = [2,4,6,8,10]
+        console.log(arr[arr.length-2]);
+        console.log(arr.length-5);
+        let arr1 = arr;
+        console.log(arr);
+        console.log(arr1);
+        arr1[2]=10;
+        console.log(arr);
+        console.log(arr1);
+    </script>
+</body>
+</html>

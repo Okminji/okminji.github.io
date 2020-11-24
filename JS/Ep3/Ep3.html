@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ep3</title>
+</head>
+<body>
+    <script>
+        let sum=0
+        // let arr=[2,35,6,4,6];
+        // for (let i=0; i<arr.length;i++){
+        //     console.log(arr[i]);
+        //     if (arr[i]==6){
+        //         continue
+        //     }
+        //     sum= sum+arr[i];
+        // }
+        console.log(sum);
+        let arr1=[1,2,3,4,5];   
+        let flag=true
+        for (let i=0; i<arr1.length;i++){
+            if (arr1[i]>arr1[i+1]){
+                flag = false;
+                break
+            }
+        }
+        // if (flag==1) {
+        //     console.log(`mang tang dan`);
+        // } else {
+        //     console.log(`mang ko tang dan`);
+        // }
+        flag ? console.log(`mang tang dan`) : console.log(`mang ko tang dan`);
+        for (let i=0; i<arr1.length;i++){
+            if (arr1[i]<arr1[i+1]){
+                flag = false;
+                break
+            }
+        }
+        flag ? console.log(`mang giam dan`) : console.log(`mang ko giam dan`);
+        for (let i=0; i<arr1.length;i++){
+                if (arr1[i]>arr1[i+1] && arr1[i]%2==0){
+                    flag = false;
+                    break
+                }
+        }
+        flag ? console.log(`mang chan tang dan`) : console.log(`mang ko`);
+        for (let i=0; i<arr1.length;i++){
+                if (arr1[i]<arr1[i+1] && arr1[i]%2==1){
+                    flag = false;
+                    break
+                }
+        }
+        flag ? console.log(`mang le giam dan`) : console.log(`mang ko`);
+       
+        function x10(str,n) {
+            let data="";
+            for (let i = 0; i < n; i++) {
+                data= data + str;
+            }
+            return data
+        }
+        console.log(x10(`aa`,10));
+        function dash10(str,n) {
+            let data="";
+            for (let i = 0; i < n; i++) {
+                data= data + str + `-`;
+            }
+            data=data.slice(0,-1);
+            return data
+        }
+        console.log(dash10(`ab`,10));
+        function cut(str) {
+            let data="";
+            if (str.length<=8) {
+                data=str;
+            } else {
+                data=str.slice(0,8)+`...`;
+            }
+            return data;
+        }
+        function del(arr,n) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i]==n){
+                    arr.splice(i,1);
+                };
+            }
+            return arr
+        }
+        function swap(arr) {
+             for (let i = 0; i < arr.length; i++) {
+                 
+             }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep4</title>
+</head>
+<body>
+    <script>
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        let arr3 = [7,8,9];
+        let arr = arr1.concat(arr2,arr3,[10,11,12])
+        console.log(arr1 +arr2);
+        console.log(arr.reverse());
+        let string = arr.join("-");
+        console.log(string);
+        function repeatstring(str,n) {
+            let arr=[]
+            for (let i = 0; i < n; i++) {
+                arr.push(str)
+            }
+            str = arr.join(`-`);
+            return str;
+            console.log(str);
+        }
+        function div2(arr) {
+            let result=[]
+            for (let i = 0; i < arr.length; i++) {
+                result.push(arr[i]%2)
+            }        
+            return result;
+            console.log(result);
+        }
+        function length(arr) {
+            let max=0;
+            let result=[];
+            for (let i = 0; i < arr.length; i++) {
+                if (max<arr[i].length) {
+                    max=arr[i].length;                    
+                }
+            }
+            for (let i = 0; i < arr.length; i++){
+                if (max==arr[i].length){
+                    result.push(arr[i]);
+                }
+            }        
+            return result
+        }
+        function fizbuz(n) {
+                for (let i = 1; i <= n; i++) {
+                   if (i%3==0 && i%5==0) {
+                      console.log(`fizzbuzz`); 
+                   } else if (i%5==0){
+                       console.log(`buzz`);
+                   } else if (i%3==0){
+                       console.log(`fizz`);
+                   } else { console.log(i);}
+                }
+            }
+        function reverse(str) {
+            let arr=str.split(``);
+            arr.reverse();
+            str=arr.join(``)
+            return str
+        }
+        function ioi(str) {
+            let strnew=str.replace(` `,``);
+            let arr= strnew.split(``);
+            if (arr.length%2==0) {
+                for (let i = 0; i < arr.length; i++) {  
+                    
+                }
+            }
+        }
+    </script>
+</body>
+</html>

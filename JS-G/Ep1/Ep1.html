@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep1</title>
+</head>
+<body>
+    <h1 id="heading">H1 <span>Heloo
+    </span> </h1>
+    <p>para1</p>
+    <p id="para2">para2</p>
+    <p class="para">para3</p>
+    <p class="para">para4</p>
+    <ul>
+        <li></li>
+        <li></li>
+    </ul>
+    <script>
+        // const h0 = document.getElementById(`heading`);
+        // console.log(h0);
+        // const paras = document.getElementsByTagName(`p`);
+        // console.log(paras);
+        // const paras1 = document.getElementsByClassName(`para`)
+        // console.log(paras1);
+        // const heading = document.querySelector(`#heading`)
+        // console.log(heading);
+        // const heading1 = document.querySelector(`h1`)
+        // console.log(heading1);
+        // const para1 = document.querySelector(`.para`)
+        // console.log(para1);
+        // const para2 = document.querySelectorAll(`.para`)
+        // console.log(para2);
+        // const ul = document.querySelector()
+        //Node.parentnode: tham chieu den nut cha cua nut hien tai
+        //node.childnodes: tham chieu dne cac nut con truc tiep cua nut hien tai
+        //node.firstchild/lastchild: tham chiet den nut con dau/cuoi cua nut hien tai
+        //node.nextsibling/previoussibling: tham chieu den nut anh em nam lien ke sau/truoc voi nut hien tai
+        const h1 = document.getElementById(`heading`);
+        console.log(h1.innerHTML);
+        console.log(h1.innerText);
+        console.log(h1.textContent);
+        h1.innerHTML = "<em>xin chao cac ban<em>"
+
+        let link = document.createElement(`a`)
+        link.href = `http://facebook.com`;
+        link.target = `_blank`;
+        link.innerText = `facebook`;
+        console.log(link);
+
+        document.body.appendChild(link)
+
+        let list1 = document.createElement(`li1`)
+        //let node
+        let input = document.createElement(`input`)
+        input.type = `text`
+        input.placeholder = `nhap gia tri`
+        //refer node
+        let para1 = document.querySelector(`.para`);
+        document.body.insertBefore(input, para1);
+
+        let button = document.createElement("button");
+        button.innerText="click"
+        
+        //para1.insertAdjacentElement(`afterend`, button;
+        para1.insertAdjacentHTML("afterend",`<button>Click</button>`)
+        
+        // const para2 = document.getElementById("para2")
+        // document.body.removeChild(para2)
+        
+        let h2 = document.createElement("h1");
+        h2.id = "new";
+        
+        
+    </script>
+</body>
+</html>

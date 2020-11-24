@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1</title>
+</head>
+
+<body>
+    <h1 id="heading">Bài tập thực hành DOM</h1>
+    <p class="para para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="para para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="para para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="content">
+        <h2 id="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptatibus
+                sint molestias sit odit quia labore alias! Accusamus magnam aperiam officiis? Laboriosam numquam at eum
+                dicta quos temporibus in aliquid?</p>
+    </div>
+    <script>
+        let h1 = document.getElementById(`heading`);
+        h1.style.color = "red";
+        h1.style.textTransform = "uppercase";
+
+        const para = document.getElementsByClassName(`para`)
+        for (var i = 0; i < para.length; i++) {
+            var currentEl = para[i];
+            currentEl.style.color = 'blue';
+        }
+
+        let para3 = document.querySelector(`.para-3`);
+        // let button = document.createElement(`button`)
+        // button.type = `button`
+        // button.innerText=`clickme`
+        let node = document.createElement("p");     
+        let link = document.createElement(`a`)  
+        link.href = `http://facebook.com`;
+        link.target = `_blank`;
+        link.innerText = `facebook`;
+        document.body.insertBefore(node, para3.nextSibling)
+        node.append(link)
+
+        var title = document.getElementById("title");
+        title.innerText= "day la the title"
+
+        let description = document.querySelector(`.description`)
+        description.classList.add("text-bold");
+        let bold = document.getElementsByClassName("text-bold")
+         for (var i = 0; i < bold.length; i++) {
+            var currentEl = bold[i];
+            currentEl.style.fontWeight = 'bold';
+        }
+
+        let button = document.createElement(`button`)
+        button.type = `button`
+        button.innerText=`clickme`
+        document.body.replaceChild(button, para3)
+        
+        let para2 = document.querySelector(`.para-2`);
+        let cln = para2.cloneNode(true)
+        document.body.insertBefore(cln, para2.nextSibling)
+        
+        let para1 = document.querySelector(`.para-1`);
+        document.body.removeChild(para1)
+    </script>
+</body>
+
+</html>
