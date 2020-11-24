@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1.1</title>
+</head>
+<body>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <br>
+    <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+    <script>
+        let text = document.getElementById(`text`);
+        text.style.color = `#777`
+        text.style.fontSize = `32px`
+        text.innerText = "Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript."
+        let li = document.getElementsByTagName(`li`)
+        for (var i = 0; i < li.length; i++) {
+            var currentEl = li[i];
+            currentEl.style.color = 'blue';
+        }
+    </script>
+</body>
+</html>
