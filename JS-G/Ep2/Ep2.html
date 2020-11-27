@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep2</title>
+</head>
+<body>
+    <h1>HeLlOo</h1>
+    <style>
+        .big{font-size: large;}
+        .upcase{text-transform: uppercase;}
+    </style>
+    <script>
+        // Mouse down
+        // mouse move
+        // mouse up
+        // click
+        // document.addEventListener(`mousedown`, function () {console.log(`mouse down`);
+        // });
+
+        // let button=document.createElement(`button`)
+        // button.type=`button`
+        // button.addEventListener(`click`, function() {
+        //     heading.classList.toggle(`upcase`);
+        // })
+
+        // keydown
+        // keypress
+        // keyup
+        let h1 = document.querySelector(`h1`);
+        document.addEventListener(`keydown`, function (log) {
+            let x = log.keyCode
+            if (x==13) {
+                h1.classList.toggle(`big`)
+            } else if (x==32) {
+                h1.classList.toggle(`upcase`)
+            }
+        })
+
+    </script>
+</body>
+</html>

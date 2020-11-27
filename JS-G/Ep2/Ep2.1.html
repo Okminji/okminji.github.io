@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style> 
+    .hide{display: none}
+    </style>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+    </ul>
+
+    <script>
+        let ul = document.querySelector(`ul`);
+        let li8 = document.createElement(`li`)
+        li8.innerText= `Item 8`;
+        let li9 = document.createElement(`li`)
+        li9.innerText= `Item 9`;
+        let li10 = document.createElement(`li`)
+        li10.innerText= `Item 10`;
+        ul.appendChild(li8);
+        ul.appendChild(li9);
+        ul.appendChild(li10);
+        
+        let li = document.querySelectorAll(`li`)
+        li[0].style.color= `red`
+        
+        li[2].style.backgroundColor= `green`
+        ul.removeChild(li[3])
+        
+        let newli= document.createElement(`li`)
+        newli.innerText= `blabla`
+        ul.insertBefore(newli, li[4])
+        
+        let add = document.createElement(`button`)
+        add.innerText= `add`
+        let input = document.createElement(`input`)
+        input.type = `text`
+        input.placeholder = `input`
+        document.body.insertBefore(add, ul)
+        document.body.insertBefore(input, add)
+        add.addEventListener(`click`, function(){
+            let addin = document.createElement(`li`);
+            addin.innerText=input.value
+            ul.appendChild(addin)
+            input.value=``
+        })
+        
+        let remove = document.createElement(`button`)
+        remove.innerText=`remove`
+        document.body.insertBefore(remove, ul.nextSibling)
+        remove.addEventListener(`click`, function(){
+            ul.removeChild(ul.lastChild)
+        })
+        
+        let hide = document.createElement(`button`)
+        document.body.insertBefore(hide, ul)
+        hide.innerText=`hide`
+        hide.addEventListener(`click`, function() {
+            ul.classList.toggle(`hide`)
+            if (ul.classList.contains(`hide`)==true) {
+                hide.innerText=`show`
+            } else {
+                hide.innerText=`hide`
+            }
+        })
+    </script>
