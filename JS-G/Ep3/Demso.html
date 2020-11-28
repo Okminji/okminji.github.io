@@ -60,11 +60,13 @@
             margin-bottom: 0;
             text-transform: uppercase;
         }
+
         #counter {
             font-size: 80px;
             text-align: center;
             margin-top: 20px;
         }
+
         .btn-container {
             display: flex;
             justify-content: space-around;
@@ -85,28 +87,28 @@
         let h1 = document.querySelector(`#counter`)
         let up = document.querySelector(`.nextBtn`)
         let down = document.querySelector(`.prevBtn`)
-        up.addEventListener(`click`, function(){
+        up.addEventListener(`click`, function () {
             h1.innerHTML = 1 + Number(h1.innerHTML);
-            if (Number(h1.innerHTML)<0){
-            h1.style.color = `red`
-        } else if (Number(h1.innerHTML)>0){
-            h1.style.color = `green`
-        } else if (Number(h1.innerHTML)==0){
-            h1.style.color = `#333333`
-        } 
+            if (Number(h1.innerHTML) < 0) {
+                h1.style.color = `red`
+            } else if (Number(h1.innerHTML) > 0) {
+                h1.style.color = `green`
+            } else if (Number(h1.innerHTML) == 0) {
+                h1.style.color = `#333333`
+            }
         })
-        down.addEventListener(`click`, function(){
+        down.addEventListener(`click`, function () {
             h1.innerHTML = Number(h1.innerHTML) - 1;
-            if (Number(h1.innerHTML)<0){
-            h1.style.color = `red`
-        } else if (Number(h1.innerHTML)>0){
-            h1.style.color = `green`
-        } else if (Number(h1.innerHTML)==0){
-            h1.style.color = `#333333`
-        } 
+            if (Number(h1.innerHTML) < 0) {
+                h1.style.color = `red`
+            } else if (Number(h1.innerHTML) > 0) {
+                h1.style.color = `green`
+            } else if (Number(h1.innerHTML) == 0) {
+                h1.style.color = `#333333`
+            }
         })
-        
-    </script>   
+
+    </script>
 </body>
 
 </html>
