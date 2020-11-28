@@ -24,8 +24,8 @@
         attack run.
 
         The Death Star plans are not in the main computer. Where are those transmissions you intercepted? What have you
-        done with those plans? We intercepted no transmissions. Aaah....This is a consular ship. Were on a diplomatic
-        mission. If this is a consular ship...were is the Ambassador? Commander, tear this ship apart until you've found
+        done with those plans? We intercepted no transmissions. Aaah.... This is a consular ship. Were on a diplomatic
+        mission. If this is a consular ship... were is the Ambassador? Commander, tear this ship apart until you've found
         those plans and bring me the Ambassador. I want her alive! There she is! Set for stun! She'll be all right.
         Inform Lord Vader we have a prisoner.
 
@@ -40,16 +40,38 @@
     <script>
         // Bài 1: Highlight tất cả các từ có độ dài lớn hơn hoặc bằng 8 ký tự trọng đoạn văn (background = "yellow")
         let para = document.querySelector(`p`);
-        let para1= para.innerText.split(` `);
+        let para1= para.innerText.split(" ");
         console.log(para1);
         for (let i = 0; i < para1.length; i++) {
-            if (para1[i].length>=8){para1.splice(i, 0 ,`<span class="hl">`); para1.splice(i+2, 0 ,`</span>`)}
+            if (para1[i].length>=8) {
+                console.log(para1[i]);
+                para1[i]=`<span class="hl">`+para1[i]+"</span>"} 
         }
-        let hled = para1.join()
-        para.innerText=hled
+        let hled = para1.join(` `)
+        para.innerHTML=hled
         // bài 2: Thêm link hiển thị text "facebook" link đến trang facebook.com ở sau thẻ p
+        let link = document.createElement(`a`)
+        link.href = `http://facebook.com`;
+        link.target = `_blank`;
+        link.innerText = `facebook`;
+        document.body.insertBefore(link, para.nextSibling)
         // bài 3. Đếm số từ có trong đoạn văn. Tạo 1 thẻ div để hiển thị số từ
+        console.log(para1.length);
+        let div = document.createElement("div");
+        div.innerText="word count: " + para1.length;
+         document.body.insertBefore(div, para)
         // Bài 4: thay thế ? => 🤔, ! => 😲
+        let para2= para.innerHTML.split(``);
+        for (let i = 0; i < para2.length; i++) {
+            if (para2[i]==`?`) {
+                para2[i]="🤔"
+            } else if (para2[i]==`!`) {
+                para2[i]= `😲`
+            }
+        }
+        hled = para2.join(``)
+        console.log(hled);
+        para.innerHTML= hled
     </script>
 </body>
 
